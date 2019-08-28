@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no;"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imagen responsive con picture</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        img {
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <img srcset="images/240/601221fc-f9c4-4fb6-b553-fca908bed192.jpg 480w,
+                 images/360/601221fc-f9c4-4fb6-b553-fca908bed192.jpg 720w,
+                 images/640/601221fc-f9c4-4fb6-b553-fca908bed192.jpg 1280w,
+                 images/840/601221fc-f9c4-4fb6-b553-fca908bed192.jpg 1680w,
+                 images/980/601221fc-f9c4-4fb6-b553-fca908bed192.jpg 1960w"
+        src="images/150/601221fc-f9c4-4fb6-b553-fca908bed192.jpg"
+        alt="Imagen"> -->
+    <img srcset="images/150/601221fc-f9c4-4fb6-b553-fca908bed192.jpg 150w,
+                 images/240/601221fc-f9c4-4fb6-b553-fca908bed192.jpg 240w,
+                 images/360/601221fc-f9c4-4fb6-b553-fca908bed192.jpg 360w,
+                 images/640/601221fc-f9c4-4fb6-b553-fca908bed192.jpg 640w,
+                 images/840/601221fc-f9c4-4fb6-b553-fca908bed192.jpg 840w,
+                 images/980/601221fc-f9c4-4fb6-b553-fca908bed192.jpg 980w"
+        src="images/150/601221fc-f9c4-4fb6-b553-fca908bed192.jpg"
+        alt="Imagen">
+    <script>
+        alert("Datos:\n" +
+            "- Viewport width: " + document.documentElement.clientWidth + "x" + document.documentElement.clientHeight + "\n" +
+            "- Device pixel ratio: " + devicePixelRatio + "\n" +
+            "- Pixeles: " + (document.documentElement.clientWidth * devicePixelRatio) + "x" + (document.documentElement.clientHeight * devicePixelRatio));
+    </script>
+</body>
+
+</html>
